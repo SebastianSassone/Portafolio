@@ -22,8 +22,6 @@ let section_proyectos = document.getElementById('section_proyectos');
 
 let h2_c = section_proyectos.querySelectorAll('h2')   
 let p_c  = section_proyectos.querySelectorAll('p')  
-console.log(p_c[1].textContent)
-
 
 button_mas_1.addEventListener('click', () => {
   mos_mas.classList.add('mos_mos_mas')
