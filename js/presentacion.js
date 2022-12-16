@@ -104,6 +104,7 @@ setTimeout(typeWriter, speed);
 		secs.classList.add('mos_secs');
 		pal_c.classList.add('pal_m');
 		pal_a.classList.add('pal_o');
+		ent.classList.add('pal_o')
 
 		
 	})
@@ -114,7 +115,7 @@ setTimeout(typeWriter, speed);
 		secs.classList.remove('mos_secs');
 		pal_a.classList.remove('pal_o');
 		pal_c.classList.remove('pal_m');
-		ent.classList.add('pal_o')
+		
 	})
 
 

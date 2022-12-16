@@ -115,16 +115,30 @@
                         Consiste en un aplicación web en la podemos vivir la experiencia
                         de tocar el piano de una manera muy sencilla que describiré a continuación. 
                         Como podemos observar en el video abrimos la aplicación hacemos clic en el 
-                        botón de play y podemos comenzar a disfrutar de su uso, presionando las teclas
+                        botón de pley y podemos comenzar a disfrutar de su uso, presionando las teclas
                         que se indican en la tabla de la parte inferior, donde encontraremos también 
                         sus respectivas notas del piano, también podemos hacer clic directamente en 
                         la tecla que queremos hacer sonar. 
+
                         La tabla puede ser ocultada si haci lo deseamos.
 
-                        Cabe mencionar que la versión actual de la aplicación solo esta disponible para 
+                        La versión actual de la aplicación solo esta disponible para 
                         navegadores web de escritorio con una resolución de 1356 x 535 pixeles.
-                        
-                        Las tecnologias utilizadas para su realizacion son Html5, Css3 y JavaScript.
+
+                        Para realizar la maquetación básica de la aplicación utilice Html5, para darle estilo 
+                        use css3 y para agregar funcionalidad utilice JavaScript. 
+                        El sonido que se produce cuando presionamos una tecla del piano se logra gracias a
+                        una función de JavaScript que nos permite capturar la tecla que presionamos o el evento 
+                        del clic si decidimos utilizar el mouse para apretar la teclas del piano, en el caso de 
+                        la teclado agrego un escuchador de eventos al objeto window al cual le asigno el evento 
+                        'keydown' que captura cuando una tecla fue presionada,  utilizando un condicional if 
+                        que verifica si la tecla presionada es la que esta asociada con las notas del piano, 
+                        si es correcto dentro del bloque código del if creo un objeto audio de JavaScript 
+                        donde hago la vinculación con la carpeta donde se encuentran los samples del 
+                        piano y le atribuyo la función de pley para que se reproduzca.     
+                        En caso de hacer clic directamente dentro de las teclas agrego un escuchador de eventos
+                        que captura el evento 'clic' cuando esto sucede se dispara una función que contiene el 
+                        objeto audio anteriormente mencionado.
                     </p>
                     <button type="button" class="button_mas" id="button_mas_1">Mostrar mas</button>
                     <div><a id="a_s" href="https://github.com/SebastianSassone/samplepiano.github.io">Link al repositorio</a></div>
@@ -139,27 +153,41 @@
                 <div class="descripcion"> 
                     <h2>Generador de paletas de colores perzonalizada</h2>
                     <p>
-                       Esta aplicacion web consiste en herramienta 
-                       de diseño grafico creada con el fin de poder 
-                       generar una paleta de colores que se adapte al 
-                       diseño deseado de manera libre y gratuita.
-
-                       Podemos generar colores directamente haciendo 
-                       clic en los botones que continen sus respectivos nombres
-                       o podemos hacer clic en los inputs que se encuentran en la
-                       seccion de "crear tu propio color" donde se despliegara un 
-                       circulo cromatico para llegar a tonalidad deseemos, tambien 
-                       esta seccion tiene una funcionalidad que nos permite inportar
-                       colores que deseemos incluir en nuestra paleta simplemte 
-                       seleccionemos el "gotero" lo arrastramos asta donde 
-                       se encuentra el color hacemos clic luego volvemos a la paleta 
-                       y se mostrara alli, tambien podemos pegar derectamente el codigo 
-                       de un color en los inputs de la paleta.
-    
-                       Esta aplicacion fue diseñada ustilizando las tecnologias 
-                       de Html5, Css3 y JavaScrip, y acctualment solo se encuentra
-                       disponibles para dispostivos de escritorio y netbooks.
-                    </p>
+                        Esta aplicación web consiste en herramienta 
+                        de diseño grafico creada con el fin de poder 
+                        generar una paleta de colores que se adapte al 
+                        diseño deseado de manera libre y gratuita.
+ 
+                        Podemos generar colores directamente haciendo 
+                        clic en los botones que contienen sus respectivos nombres
+                        o podemos hacer clic en los inputs que se encuentran en la
+                        sección de "crear tu propio color" donde se desplegara un 
+                        circulo cromático para llegar a tonalidad deseemos, también 
+                        esta sección tiene una funcionalidad que nos permite importar
+                        colores que deseemos incluir en nuestra paleta simplemente
+                        seleccionemos el "gotero" lo arrastramos asta donde 
+                        se encuentra el color hacemos clic luego volvemos a la paleta 
+                        y se mostrara allí, también podemos pegar directamente el código 
+                        de un color en los inputs de la paleta.
+     
+                        Actualmente solo se encuentra disponibles para dispositivoss 
+                        de escritorio y netbooks.
+ 
+                        Esta aplicación fue diseñada utilizando las tecnologías 
+                        de Html5, Css3 y JavaScript.
+ 
+                        Para lograr que un uno de los colores de nuestra paleta cambie
+                        empleo una función de JavaScript que captura el valor de los botones
+                        y de los inputs de tipo color que encuentran el código html para 
+                        despues asignárselos a los divs que contienen los colores
+                        de nuestra paleta, de igual manera para mostrar el código de 
+                        cada color en valor hexadecimal empleo la función antes mencionada 
+                        la cual toma el valor actual del input de tipo texto que se encuentra
+                        en el div al cual le asignamos el color y le otorga el valor actual del 
+                        input de tipo color. Finalmente para esta función se dispare empleo un
+                        bucle for que captura el evento clic de cada botón o input a sido 
+                        presionado o utilizado y le indica que accione nuestra función.
+                    </p> 
                     <button type="button" class="button_mas" id="button_mas_2">Mostrar mas</button>
                     <div><a href="https://github.com/SebastianSassone/Generador-de-paleta-de-colores-personalizada.github.io/">Link al repositorio</a></div>
                     <div><a href="https://sebastiansassone.github.io/Generador-de-paleta-de-colores-personalizada.github.io/">Link a la pagina</a></div>
@@ -173,17 +201,59 @@
                 <div class="descripcion"> 
                     <h2>Descubri Argentina</h2>
                     <p>
-                        Descubri Argentina es una pagina de web que ofrece el servicio de 
-                        realizada a por un equipo de desarrlladores como parte de una propuesta  
-                        de santander argentina. 
-
+                        Descubrí Argentina es una pagina de web que ofrece el servicio de hospedaje 
+                        a cambio de trabajo como voluntario realizada a por un equipo de desarrolladores 
+                        como parte de una propuesta de Santander Tecnología para resolver una problemática
+                        social.
                         Consiste en una plataforma en donde anfitriones pueden publicar clasificados 
                         de alojamiento que como método de pago se acepta trabajo voluntario. 
 
                         ¿Estarías dispuesto a trabajar part-time con el objetivo de obtener hospedaje a cambio?
                         Esta idea nace a partir de que usuarios de distintas redes sociales realizan 
                         estas practicas para viajar a lo largo del país y nuestro objetivo es darles 
-                        una plataforma formal.  
+                        una plataforma formal y segura donde los anfitriones realizan sus publicaciones y 
+                        los voluntarios se ponen en contacto con ellos.
+
+                        Lo que podemos observar el video es una demo de la pagina web y simulación del 
+                        funcionamiento real de la misma ya que actualmente se encuentra en proceso de 
+                        desarrollo.
+
+                        En la pagina web contamos un menú de navegación que nos permitirá desplazarnos por
+                        las diferentes secciones de la misma, contamos con las secciones de: Inicio, 
+                        Elegí tu destino, Nosotros y Registro. 
+                        En la sección de inicio nos encontramos un carrusel con imágenes de diferentes 
+                        paisajes de la argentina, también tenemos nuestro eslogan oficial, luego
+                        en el cuerpo de la pagina incluimos los diferentes tipos de paisajes que nos
+                        podeos encontrar a lo largo de todo el país.
+                        
+                        En la sección de elegí tu destino se muestran las publicaciones que hacen los
+                        anfitriones, a las cuales se puede acceder mediante filtros o buscando directamente
+                        en la parte principal, desde aquí también haciendo clic en las publicaciones
+                        podemos acceder a los diferentes detalles de la misma, debo mencionar que para 
+                        realizar esto ultimo que menciono es necesario estar registrado en nuestra pagina 
+                        web.
+                        
+                        Registrarnos es muy sencillo simplemente haciendo clic en el botón de registro 
+                        rellenamos un simple formulario, verificamos nuestra identidad y ya formamos 
+                        parte de Descubrí Argentina.
+
+                        Una vez que tenemos creada nuestra cuenta simplemente iniciamos sección ingresando
+                        nuestro e-mail y contraseña, en la pestaña de iniciar sección que se encuentra 
+                        al final del formulario de registro.
+                        
+                        Una vez creada la cuenta los anfitriones podrán realizar publicaciones haciendo clic
+                        en el botón inferior derecho esto nos llevara a un formulario en el cual debemos 
+                        ingresar los detalles del lugar que tenesmo disponible para ofrecer hospedaje
+                        es muy importante que especifiquemos le tipo de lugar para que los filtros puedan
+                        identificar la publicación y esta misma no se pierda, una vez tenemos todos los 
+                        datos completados hacemos clic en el botón de añadir post y nuestra publicación 
+                        se crea. Luego el voluntario podrá acceder a ella desde su perfil directamente
+                        haciendo clic en el botón inferior izquierdo, o desde el menú de navegación 
+                        seleccionando elegí tu destino.
+
+                        Para desarrollar la estructura basica de la pagina web utilizamos Html5, para darle
+                        estilos utilizamos Bootstrap y Css3, para desarrollar sus diferentes funcionalidades 
+                        utilizamos JavaScript y JQuery.  
                     </p>
                     <button type="button" class="button_mas" id="button_mas_3">Mostrar mas</button>
                     <div><a href="https://github.com/maldonado-a/descrubriArg">Link al repositorio</a></div>

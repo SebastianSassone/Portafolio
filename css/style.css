@@ -8,6 +8,17 @@ body{
     max-width: 100%;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+    background: #050025;
+}
+
+body::-webkit-scrollbar-thumb {
+    
+    background: rgb(56, 2, 67);
+    background: linear-gradient(180deg, rgb(59, 3, 85) 10%, rgba(11, 1, 65, 0.988) 130%);
+}
+
 
 /* Menu */
 
@@ -27,8 +38,8 @@ body{
 }
 
 .nav_menu h1 img{
-    height: 12%;
     width: 6%;
+    height: 12%;
     padding: 4px;
 }
 
@@ -62,8 +73,8 @@ body{
 } 
 
 .nav_menu ul li a:hover{
-    color: #cfc7d2;
     transition: 1ms;
+    color: #cfc7d2;
     transform: scale( 1.06);
     text-shadow: 1px 1px 2px black, 0 0 1em rgb(25, 0, 255), 0 0 0.2em rgb(0, 4, 255);
 }
@@ -247,9 +258,9 @@ body{
 /*Palancas*/
 
 .conten_p{
+    width: 5%;
     z-index: 2;
     height: 45%;
-    width: 5%;
     margin-left: 25%;
     margin-top: 29.1%;
     position: absolute;
@@ -552,6 +563,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow: none;
+}
+
+#descripcion_mas p {
+    padding: 8px;
+    overflow-y: scroll;
+}
+
+#descripcion_mas p::-webkit-scrollbar {
+    width: 11px;
+    background: #041f81;
+}
+
+#descripcion_mas p::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255, .2);
+    border-radius: 10px;
+    border-right: 2px solid #0037ff;
 }
 
 #boton_cerrar{
