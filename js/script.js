@@ -35,6 +35,7 @@ window.addEventListener('scroll', () => {
   let img_gi = document.getElementById('img_gi')
   let img_mon = document.getElementById('img_mon')
   let img_nod = document.getElementById('img_nod')
+  let img_rea = document.getElementById('img_rea')
 
   let posicionObjet = img_tec.getBoundingClientRect().top
   let tamanodepantalla = window.innerHeight/1
@@ -46,6 +47,7 @@ window.addEventListener('scroll', () => {
     setTimeout(() => {img_gi.style.animation = '3s aparicion 1'}, 1300)
     setTimeout(() => {img_mon.style.animation = '3s aparicion 1'}, 1400)
     setTimeout(() => {img_nod.style.animation = '3s aparicion 1'}, 1500)
+    setTimeout(() => {img_rea.style.animation = '3s aparicion 1'}, 1600)
   }
 
 })

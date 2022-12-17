@@ -503,6 +503,12 @@ body::-webkit-scrollbar-thumb {
     transition-delay: 1.4ms;
 }
 
+/* #img_rea{
+    margin-top: 7px;
+    width: 13%;
+    height: 56px;
+} */
+
 @keyframes aparicion{
      0%{
      	opacity: 0;
@@ -931,6 +937,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Diseño Adaptable */
+
+/* Monitores */
+@media only screen and (min-width: 1500px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .div_foto{
+        width: 16%;
+        height: 34%;}
+
+    #section_inicio {
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+    }
+    
+}
 
 /* Tablet */
 
