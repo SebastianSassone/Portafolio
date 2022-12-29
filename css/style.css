@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(56, 2, 67);
+    background: linear-gradient(180deg, rgb(59, 3, 85) 10%, rgba(11, 1, 65, 0.988) 130%);
+}
+
 body{
-    max-width: 100%;
+    max-width: 1500px;
+    max-height: auto;
 }
 
 body::-webkit-scrollbar {
@@ -15,8 +24,8 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     
-    background: rgb(56, 2, 67);
-    background: linear-gradient(180deg, rgb(59, 3, 85) 10%, rgba(11, 1, 65, 0.988) 130%);
+    background: #280037;
+    background: linear-gradient(180deg, #280037 10%, rgba(5, 1, 31, 0.988) 130%);
 }
 
 
@@ -118,7 +127,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section_inicio{
-    background-size: cover;
+    background-size: cover 100% 100%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url('../img/129983-198x-1980s-pixel-art-Retro-style-Hi-Bit-Studios-video-game-art-video-games-city-building.jpg');
 }
@@ -503,12 +513,6 @@ body::-webkit-scrollbar-thumb {
     transition-delay: 1.4ms;
 }
 
-/* #img_rea{
-    margin-top: 7px;
-    width: 13%;
-    height: 56px;
-} */
-
 @keyframes aparicion{
      0%{
      	opacity: 0;
@@ -522,10 +526,11 @@ body::-webkit-scrollbar-thumb {
 
 .section_proyectos{
     width: 100%;
-    height: 700px;
+    height: 1184px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: left;
+    position: relative;
+    overflow: hidden;
 }
 
 #canvas1 {
@@ -603,7 +608,6 @@ body::-webkit-scrollbar-thumb {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: rgb(0, 0, 0);
-
 }
 
 #boton_cerrar button:hover {
@@ -618,35 +622,47 @@ body::-webkit-scrollbar-thumb {
 
 /* Proyectos */
 
-.div_proyecto_1{
+ .div_proyecto_1{
     z-index: 2;
     display: flex;
-    margin-right: 65%;
+    margin-top: 2%;
+    margin-left: 10%;
     position: absolute;
 }
 
 .div_proyecto_2{
     z-index: 3;
     display: flex;
+    margin-top: 2%;
+    margin-left: 55%;
     position: absolute;
 }
 
 .div_proyecto_3{
     z-index: 4;
     display: flex;
-    margin-left: 65%;
-    position: absolute;
+    margin-left: 55%;                                              
+    margin-top: 45%;
     position: absolute;
 }
 
+.div_proyecto_4{
+    z-index: 5;
+    display: flex;
+    margin-left: 10%;                                           
+    margin-top: 45%;
+    position: absolute;
+} 
+
 .div_proyecto{
-    width: 30%;
+    width: 36.7%;
     height: 546px;
     padding: 3px;
     border-radius: 10px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
     border: 2px solid rgb(30, 42, 210);
     background: rgba(7, 0, 24, 0.019);
     background: linear-gradient(156deg, rgba(7,0,24,0.930) 30%, rgba(9,9,98,0.930) 60%, rgba(9,9,101,0.930) 100%, rgba(11,18,168,0.930) 100%, rgba(12,27,235,1) 100%);
@@ -838,7 +854,6 @@ body::-webkit-scrollbar-thumb {
     height: 350px;
     box-shadow:  0px 0px 10px 100px #0f0037;
     box-shadow: inset 0px 0px 100px 100px #0f0037;
-
 }
 
 .foco_neon{
@@ -959,6 +974,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Tablet */
 
+
 @media only screen and (max-width: 1007px){
     * {
         margin: 0;
@@ -987,6 +1003,15 @@ body::-webkit-scrollbar-thumb {
     #a_t{
         font-size: 12px;
     }  
+
+    .div_proyecto_3{
+        margin-top: 65%;       
+    }
+
+    .div_proyecto_4{
+       margin-top: 65%;
+    }
+
 
 }
 
@@ -1207,7 +1232,7 @@ body::-webkit-scrollbar-thumb {
         height: 23%;
         margin-top: 0%;
         margin-bottom: 6%;
-    border: 3px solid rgba(6, 6, 155, 0.65);
+        border: 3px solid rgba(6, 6, 155, 0.65);
 
     }
     
@@ -1242,7 +1267,7 @@ body::-webkit-scrollbar-thumb {
 
     .section_proyectos {
         width: 100%;
-        height: 980px;
+        height: 1270px;
         flex-direction: column;
     }
 
@@ -1253,22 +1278,32 @@ body::-webkit-scrollbar-thumb {
     
     .div_proyecto_1{
         margin-right: 0%;
-        margin-bottom: 165%;
+        margin-bottom: 0%;
+        margin-left: 17%;
+        margin-top: 2%;
     }
     
     .div_proyecto_2{
         display: flex;
+        margin-left: 17%;
+        margin-top: 93%;
     }
     
     .div_proyecto_3{
         display: flex;
-        margin-left: 0%;
-        margin-top: 165%;
+        margin-left: 17%;
+        margin-top: 273%;
+    }
+
+    .div_proyecto_4{
+        display: flex;
+        margin-left: 17%;
+        margin-top: 183%;
     }
     
     .div_proyecto{
         width: 70%;
-        height: 60%;
+        height: 300px;
         border-radius: 10px;
         border: 2px solid rgb(30, 42, 210);
         overflow: hidden;
