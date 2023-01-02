@@ -14,6 +14,7 @@ html{
 
 body{
     max-width: 1500px;
+    min-width: 1356px;
     max-height: auto;
 }
 
@@ -448,8 +449,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .div_foto{
-    width: 15%;
-    height: 28%;
+    max-width: 200px;
+    max-height: 200px;
     overflow: hidden; 
     border-radius: 200px;
     border: 4px solid rgba(6, 6, 155, 0.75);
@@ -987,6 +988,11 @@ body::-webkit-scrollbar-thumb {
         padding: 0;
     }
 
+    body{
+        max-width: 976px;
+        min-width: 976px;
+    }
+
     #section_inicio {
         width: 100%;
         height: 500px;
@@ -1023,7 +1029,12 @@ body::-webkit-scrollbar-thumb {
     
     .div_redes div img{
         width: 15%;}
+        
 
+    .div_foto{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 /* Celular */
@@ -1035,6 +1046,8 @@ body::-webkit-scrollbar-thumb {
     }
     
     body {
+        max-width: 384px;
+        min-width: 384px;
         background-color: #0f0037;
     }
     
@@ -1110,12 +1123,12 @@ body::-webkit-scrollbar-thumb {
     .nav_b_a, .nav_b_c:hover:active{
         text-shadow: 0px 20px 7px #3753ef ;
     }
-    
-     
+       
     .nav_b_a img{
         height: 100%;
         width: 100%;
     }
+
     .nav_b_c img{
         height: 100%;
         width: 100%;
@@ -1277,7 +1290,7 @@ body::-webkit-scrollbar-thumb {
 
     .section_proyectos {
         width: 100%;
-        height: 1300px;
+        height: 1244px;
         flex-direction: column;
     }
 
