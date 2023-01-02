@@ -127,7 +127,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section_inicio{
-    background-size: cover 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url('../img/129983-198x-1980s-pixel-art-Retro-style-Hi-Bit-Studios-video-game-art-video-games-city-building.jpg');
@@ -262,8 +262,6 @@ body::-webkit-scrollbar-thumb {
     visibility: visible;
     transition: all 0.3s;
 }
-
-
 
 /*Palancas*/
 
@@ -622,7 +620,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Proyectos */
 
- .div_proyecto_1{
+.div_proyecto_1{
     z-index: 2;
     display: flex;
     margin-top: 2%;
@@ -693,6 +691,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .descripcion h2{
@@ -703,11 +702,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .descripcion p{
-    width: 95%;   
+    width: 95%;
+    height: 60%;   
     color: #cfc7d2;
     font-size: 20px;
     overflow: hidden; 
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .descripcion div{
@@ -857,7 +860,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .foco_neon{
-    width: 30%;
+    width: 400px;
     display: flex;
     margin-top: 30px;
     position: absolute;
@@ -873,6 +876,10 @@ body::-webkit-scrollbar-thumb {
 
 .foco_neon:hover{
    animation: 0.4s foco_neon 1;
+}
+
+.div_redes div img{
+    width: 45px;
 }
 
 @keyframes foco_neon{
@@ -909,7 +916,6 @@ body::-webkit-scrollbar-thumb {
 
 .div_redes img{
     height: 100%;
-    width: 10%;
     box-shadow: 0px 1px 15px 0px  #910080;
 }
 
@@ -961,7 +967,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .div_foto{
-        width: 16%;
+        width: 26%;
         height: 34%;}
 
     #section_inicio {
@@ -1011,7 +1017,12 @@ body::-webkit-scrollbar-thumb {
     .div_proyecto_4{
        margin-top: 65%;
     }
-
+    
+    .foco_neon{
+        width: 30%;}
+    
+    .div_redes div img{
+        width: 15%;}
 
 }
 
@@ -1279,25 +1290,25 @@ body::-webkit-scrollbar-thumb {
         margin-right: 0%;
         margin-bottom: 0%;
         margin-left: 17%;
-        margin-top: 2%;
+        margin-top: 4px;
     }
     
     .div_proyecto_2{
         display: flex;
         margin-left: 17%;
-        margin-top: 95%;
+        margin-top: 315px;
     }
     
     .div_proyecto_3{
         display: flex;
         margin-left: 17%;
-        margin-top: 281%;
+        margin-top: 935px;
     }
 
     .div_proyecto_4{
         display: flex;
         margin-left: 17%;
-        margin-top: 188%;
+        margin-top: 625px;
     }
     
     .div_proyecto{
@@ -1402,7 +1413,6 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         margin-top: 15px;
         box-shadow: 0px 12px 120px 0px  #5e0247;
-
     }
     
     .foco_neon img{
@@ -1421,9 +1431,9 @@ body::-webkit-scrollbar-thumb {
         margin-top: 10px;
     }
     
-    .div_redes img{
+    .div_redes div img{
         height: 100%;
-        width: 5%;
+        width: 6%;
     }
     
     .div_redes a{
