@@ -4,20 +4,6 @@
     box-sizing: border-box;
 }
 
-html{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(73,0,62);
-    background: linear-gradient(153deg, rgba(73,0,62,1) 13%, rgba(0,0,0,1) 46%, rgba(21,0,107,1) 95%);
-}
-
-body{
-    max-width: 1500px;
-    min-width: 1356px;
-    max-height: auto;
-}
-
 body::-webkit-scrollbar {
     width: 12px;
     background: #050025;
@@ -961,10 +947,24 @@ body::-webkit-scrollbar-thumb {
 /* Diseño Adaptable */
 
 /* Monitores */
-@media only screen and (min-width: 1500px){
+ @media only screen and (min-width: 1500px){
     * {
         margin: 0;
         padding: 0;
+    }
+
+    html{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(73,0,62);
+        background: linear-gradient(153deg, rgba(73,0,62,1) 13%, rgba(0,0,0,1) 46%, rgba(21,0,107,1) 95%);
+    }
+    
+    body{
+        max-width: 1500px;
+        min-width: 1356px;
+        max-height: auto;
     }
 
     .div_foto{
@@ -989,7 +989,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     body{
-        max-width: 976px;
+        max-width: 100vh;
         min-width: 976px;
     }
 
@@ -1035,19 +1035,19 @@ body::-webkit-scrollbar-thumb {
         width: 200px;
         height: 200px;
     }
-}
+} 
 
 /* Celular */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 400px){
     * {
         margin: 0;
         padding: 0;
     }
     
     body {
-        max-width: 384px;
-        min-width: 384px;
+        max-width: 100vh;
+        min-width: 358px;
         background-color: #0f0037;
     }
     
@@ -1086,6 +1086,7 @@ body::-webkit-scrollbar-thumb {
          transition: all 0.2s;
          height: 200px;
          display: flex;
+         width: 100%;
          visibility: visible;
          font-size: 18px;
     }
