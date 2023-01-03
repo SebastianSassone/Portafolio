@@ -228,8 +228,7 @@ body::-webkit-scrollbar-thumb {
     visibility: hidden;
     position: absolute;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
 }
 
 .secs div{
@@ -260,9 +259,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 29.1%;
     position: absolute;
     position: absolute;
-
 }
-
 
 .ent{
     z-index: 4;
@@ -288,7 +285,6 @@ body::-webkit-scrollbar-thumb {
        margin-top: 30%;
     } 
 }
-
 
 .pal_c ,.pal_a{
     height: 33%;
@@ -317,14 +313,12 @@ body::-webkit-scrollbar-thumb {
     width: 100%;}
     
 .esq{
-
     width: 7%;
     z-index: 3;
     height: 20%;
     margin-left: 40%;
     margin-top: 32.3%;
     position: absolute;
-   
 }
 
 .sue{
@@ -342,7 +336,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
 }
-
 
 .dil{
     width: 10%;
@@ -371,7 +364,6 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
 }
 
-
 .a_t::after {
     content: "|";
     animation-duration: 1s;
@@ -380,8 +372,6 @@ body::-webkit-scrollbar-thumb {
     animation-iteration-count: infinite;
   }
 
- 
-  
   /*parpadeo del cursor del teclado*/
 
   @keyframes parpadeo {
@@ -435,9 +425,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .div_foto{
+    overflow: hidden; 
     max-width: 200px;
     max-height: 200px;
-    overflow: hidden; 
     border-radius: 200px;
     border: 4px solid rgba(6, 6, 155, 0.75);
 }
@@ -610,7 +600,7 @@ body::-webkit-scrollbar-thumb {
 .div_proyecto_1{
     z-index: 2;
     display: flex;
-    margin-top: 2%;
+    margin-top: 15px;
     margin-left: 10%;
     position: absolute;
 }
@@ -618,7 +608,7 @@ body::-webkit-scrollbar-thumb {
 .div_proyecto_2{
     z-index: 3;
     display: flex;
-    margin-top: 2%;
+    margin-top: 15px;
     margin-left: 55%;
     position: absolute;
 }
@@ -627,7 +617,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 4;
     display: flex;
     margin-left: 55%;                                              
-    margin-top: 45%;
+    margin-top: 615px;
     position: absolute;
 }
 
@@ -635,7 +625,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 5;
     display: flex;
     margin-left: 10%;                                           
-    margin-top: 45%;
+    margin-top: 615px;
     position: absolute;
 } 
 
