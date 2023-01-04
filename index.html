@@ -184,14 +184,13 @@
             <form class="form-men" id="form" action="https://formspree.io/f/mdojqwdq" method="POST" >
                 <p>Mandame un mensaje a mi email!</p>
                 <label for="name">Nombre
-                    <input type="text">
+                    <input type="text" required minlength="4">
                 </label>
                 <label for="email">Email
-                    <input name="email" type="text">
+                    <input name="email" type="text" required minlength="10">
                 </label>
                 <label for="message">Mensaje
-                    <textarea name="message" id="" cols="30" rows="10">
-                    </textarea>
+                    <textarea name="message" id="" cols="30" rows="10" required minlength="10"></textarea>
                 </label>
               <button type="submit">Enviar</button>
            </form>

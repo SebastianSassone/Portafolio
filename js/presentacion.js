@@ -7,12 +7,6 @@ function definir(){
 	pers.style.left = x + 'px';	
 }
 
-window.addEventListener('keydown', (e) => {
-    let tecla = e.key
-    console.log(tecla) 
-  })
-
-
 section_inicio.addEventListener('load', () =>{ 
 definir()})
 
@@ -63,7 +57,7 @@ definir()})
 //Cuadro de dialogo
 
 window.addEventListener('load', () => {
-setTimeout(() => {dil.style.animation = '10s aparicion_dil 1'}, 1500)
+setTimeout(() => {dil.style.animation = '9s aparicion_dil 1'}, 1500)
 // setTimeout(() => {dil.style.opacity = 'inherit'}, 1200)
 })
 
