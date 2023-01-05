@@ -57,7 +57,7 @@ definir()})
 //Cuadro de dialogo
 
 window.addEventListener('load', () => {
-setTimeout(() => {dil.style.animation = '9s aparicion_dil 1'}, 1500)
+setTimeout(() => {dil.style.animation = '9s aparicion_dil 1'}, 900)
 // setTimeout(() => {dil.style.opacity = 'inherit'}, 1200)
 })
 
