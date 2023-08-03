@@ -36,6 +36,10 @@ window.addEventListener('scroll', () => {
   let img_mon = document.getElementById('img_mon')
   let img_nod = document.getElementById('img_nod')
   let img_rea = document.getElementById('img_rea')
+  let img_jav = document.getElementById('img_jav')
+  let img_mys = document.getElementById('img_mys')
+  let img_col = document.getElementById('img_col')
+  let img_db2 = document.getElementById('img_db2')
 
   let posicionObjet = img_tec.getBoundingClientRect().top
   let tamanodepantalla = window.innerHeight/1
@@ -48,8 +52,11 @@ window.addEventListener('scroll', () => {
     setTimeout(() => {img_mon.style.animation = '3s aparicion 1'}, 1400)
     setTimeout(() => {img_nod.style.animation = '3s aparicion 1'}, 1500)
     setTimeout(() => {img_rea.style.animation = '3s aparicion 1'}, 1600)
+    setTimeout(() => {img_jav.style.animation = '3s aparicion 1'}, 1700)
+    setTimeout(() => {img_mys.style.animation = '3s aparicion 1'}, 1800)
+    setTimeout(() => {img_col.style.animation = '3s aparicion 1'}, 1900)
+    setTimeout(() => {img_db2.style.animation = '3s aparicion 1'}, 2000)
   }
-
 })
 
 sobre.addEventListener('click', () => {
@@ -60,6 +67,11 @@ sobre.addEventListener('click', () => {
   let img_gi = document.getElementById('img_gi')
   let img_mon = document.getElementById('img_mon')
   let img_nod = document.getElementById('img_nod')
+  let img_rea = document.getElementById('img_rea')
+  let img_jav = document.getElementById('img_jav')
+  let img_mys = document.getElementById('img_mys')
+  let img_col = document.getElementById('img_col')
+  let img_db2 = document.getElementById('img_db2')
 
   setTimeout(() => {img_ht.style.animation = '3s aparicion 1'}, 1000)
   setTimeout(() => {img_cs.style.animation = '3s aparicion 1'}, 1100)
@@ -67,6 +79,11 @@ sobre.addEventListener('click', () => {
   setTimeout(() => {img_gi.style.animation = '3s aparicion 1'}, 1300)
   setTimeout(() => {img_mon.style.animation = '3s aparicion 1'}, 1400)
   setTimeout(() => {img_nod.style.animation = '3s aparicion 1'}, 1500)
+  setTimeout(() => {img_rea.style.animation = '3s aparicion 1'}, 1600)
+  setTimeout(() => {img_jav.style.animation = '3s aparicion 1'}, 1700)
+  setTimeout(() => {img_mys.style.animation = '3s aparicion 1'}, 1800)
+  setTimeout(() => {img_col.style.animation = '3s aparicion 1'}, 1900)
+  setTimeout(() => {img_db2.style.animation = '3s aparicion 1'}, 2000)
    
 })
 
