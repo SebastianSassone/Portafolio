@@ -130,28 +130,11 @@ async function handleSubmit (e) {
  
 }
 
+const moscoun = document.getElementById('moscoun');
 
-// const $form = document.querySelector('#form')
+moscoun.addEventListener('click', () => {
+   let counter = document.getElementById('counter');
+   counter.style.display = 'flex';
+   setTimeout(() => {counter.style.display = 'none';}, 2000)
 
-// $form.addEventListener('submit', handleSubmit)
-
-// async function handleSubmit (event) {
-
-//   event.preventDefault()
-
-//   const form = new FormData(this)
-
-//   const response = await fetch(this.action, { 
-//       method: this.method,
-//       body: form,
-//       headers: {
-//       'Accept': 'application/json'
-//     }
-//   })
-
-//   if (response.ok) {
-//   this.reset()
-//   alert('Gracias por contactarme, te escribiré pronto')
-//   }
-
-// }
+})
