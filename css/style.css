@@ -569,7 +569,15 @@ body::-webkit-scrollbar-thumb {
     margin-left: 32.5%;                                           
     margin-top: 1800px;
     position: absolute;
-} 
+}
+
+/* .div_proyecto_8{
+    z-index: 5;
+    display: flex;
+    margin-left: 32.5%;                                           
+    margin-top: 1800px;
+    position: absolute;
+}  */
 
 .div_proyecto{
     width: 36.7%;
@@ -1270,6 +1278,12 @@ body::-webkit-scrollbar-thumb {
     }
 
     .div_proyecto_7{
+        display: flex;
+        margin-left: 17%;
+        margin-top: 1880px;
+    }
+
+    .div_proyecto_8{
         display: flex;
         margin-left: 17%;
         margin-top: 1880px;
